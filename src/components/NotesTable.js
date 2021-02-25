@@ -18,7 +18,7 @@ export const NotesTable = () => {
             notes.map(n =>
                <tr>
                   <td style={{width: '3em'}}>
-                     <EditNoteModal note={n.value}/>
+                     <EditNoteModal note={n}/>
                   </td>
                   <td style={{width: '3em'}}>
                      <Button className='btn btn-danger' onClick={() => DeleteNote(dispatch, n)}>Delete</Button>
